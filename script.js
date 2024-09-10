@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // delete button dito
+    // delete button
     document.querySelectorAll('.delete-btn').forEach(button => {
         button.addEventListener('click', function() {
             const index = this.getAttribute('data-index');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }).then((result) => {
                 if (result.isConfirmed) {
                     // Redirect to delete the task
-                    window.location.href = `notes.php?delete=${index}`;
+                    window.location.href = `grp5_yuliparjay_ex3.php?delete=${index}`;
                 }
             });
         });
